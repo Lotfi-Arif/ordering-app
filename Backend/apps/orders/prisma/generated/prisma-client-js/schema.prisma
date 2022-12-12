@@ -13,8 +13,8 @@ datasource db {
 }
 
 generator nestgraphql {
-  // provider = "node node_modules/prisma-nestjs-graphql"
-  provider = "node /usr/src/app/node_modules/prisma-nestjs-graphql"
+  provider = "node node_modules/prisma-nestjs-graphql"
+  // provider = "node /usr/src/app/node_modules/prisma-nestjs-graphql"
   output = "../libs/common/src/generated/index"
 }
 

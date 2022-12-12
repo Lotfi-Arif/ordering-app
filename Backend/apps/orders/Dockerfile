@@ -2,6 +2,7 @@ FROM node:16 As development
 
 WORKDIR /usr/src/app
 
+COPY package.json ./
 COPY package*.json ./
 COPY apps/orders/prisma ./apps/orders/
 
@@ -16,7 +17,7 @@ RUN yarn install
 
 COPY . .
 
-RUN npx prisma generate --schema=./apps/orders/prisma/schema.prisma
+RUN yarn run generate:orders
 
 RUN yarn run build
 

@@ -26,12 +26,12 @@ const Prisma = {}
 exports.Prisma = Prisma
 
 /**
- * Prisma Client JS version: 4.4.0
- * Query Engine version: f352a33b70356f46311da8b00d83386dd9f145d6
+ * Prisma Client JS version: 4.3.1
+ * Query Engine version: c875e43600dfe042452e0b868f7a48b817b9640b
  */
 Prisma.prismaVersion = {
-  client: "4.4.0",
-  engine: "f352a33b70356f46311da8b00d83386dd9f145d6"
+  client: "4.3.1",
+  engine: "c875e43600dfe042452e0b868f7a48b817b9640b"
 }
 
 Prisma.PrismaClientKnownRequestError = PrismaClientKnownRequestError;
@@ -135,7 +135,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/usr/src/app/apps/orders/prisma/generated/prisma-client-js",
+      "value": "/Users/lotfiarif/practice/ordering-app/Backend/apps/orders/prisma/generated/prisma-client-js",
       "fromEnvVar": null
     },
     "config": {
@@ -144,7 +144,7 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "linux-arm64-openssl-1.1.x"
+        "value": "darwin-arm64"
       },
       {
         "fromEnvVar": null,
@@ -159,8 +159,8 @@ const config = {
     "schemaEnvPath": "../../../../../.env"
   },
   "relativePath": "../..",
-  "clientVersion": "4.4.0",
-  "engineVersion": "f352a33b70356f46311da8b00d83386dd9f145d6",
+  "clientVersion": "4.3.1",
+  "engineVersion": "c875e43600dfe042452e0b868f7a48b817b9640b",
   "datasourceNames": [
     "db"
   ],
@@ -183,6 +183,9 @@ warnEnvConflicts({
 const PrismaClient = getPrismaClient(config)
 exports.PrismaClient = PrismaClient
 Object.assign(exports, Prisma)
+
+path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
+path.join(process.cwd(), "apps/orders/prisma/generated/prisma-client-js/libquery_engine-darwin-arm64.dylib.node")
 
 path.join(__dirname, "libquery_engine-linux-arm64-openssl-1.1.x.so.node");
 path.join(process.cwd(), "apps/orders/prisma/generated/prisma-client-js/libquery_engine-linux-arm64-openssl-1.1.x.so.node")
